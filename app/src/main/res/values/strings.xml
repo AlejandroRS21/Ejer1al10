@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejer1</string>
+    <string name="mostrar_mensaje">Mostrar mensaje toast</string>
+    <string name="alejandro_ramirez">Alejandro Ramirez</string>
+    <string name="cambiar_texto">Cambiar texto</string>
+    <string name="bienvenidos_a_android">Bienvenidos a Android</string>
+    <string name="primera_pantalla">Primera pantalla</string>
+    <string name="ir_a_la_segunda_pantalla">Segunda pantalla Lista de frutas</string>
+    <string name="tema">Tema</string>
+    <string name="lista_de_frutas">Lista de Frutas</string>
+</resources>

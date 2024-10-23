@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_marginTop="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Ejercicio 1: Modificar el "Hola Mundo" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenidos_a_android"
+        android:textColor="#FF5722"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alejandro_ramirez"
+        android:textColor="#3F51B5"
+        android:textSize="14sp" />
+
+    <!-- Ejercicio 2: Interacción con botones (Cambiar texto) -->
+    <Button
+        android:id="@+id/btnCambiarTexto"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/cambiar_texto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="12sp" />
+
+    <!-- Ejercicio 3: Usar Toasts -->
+    <Button
+        android:id="@+id/btnMostrarToast"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/mostrar_mensaje" />
+
+    <!-- Ejercicio 4: Navegación entre pantallas -->
+    <TextView
+        android:id="@+id/tvPrimeraPantalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/primera_pantalla"
+        android:textColor="#FF5722"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSecondActivity"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/ir_a_la_segunda_pantalla" />
+
+    <!-- Ejercicio 5: Cambiar el color de fondo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar color de fondo"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAzul"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="azul" />
+
+        <Button
+            android:id="@+id/btnVerde"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verde" />
+
+        <Button
+            android:id="@+id/btnRojo"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rojo" />
+    </LinearLayout>
+
+    <!-- Ejercicio 6: Captura de datos con EditText -->
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="200dp"
+        android:height="48dp"
+        android:hint="Aquí el nombre"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnMostrarNombre"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:text="Mostrar nombre" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textAllCaps="true"
+        android:textSize="16sp" />
+
+    <!-- Ejercicio 7: Cambiar entre temas claros y oscuros -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tema"
+        android:textSize="16sp" />
+
+    <Switch
+        android:id="@+id/swTema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="48dp"
+        android:height="48dp" />
+
+    <!-- Ejercicio 9: Guardar datos con SharedPreferences -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce tu nombre: "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTxt"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="Tu nombre aquí" />
+
+    <Button
+        android:id="@+id/btnGuardarNombre"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Guardar nombre" />
+
+    <TextView
+        android:id="@+id/tvNameShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu nombre guardado"
+        android:textSize="30sp" />
+
+</LinearLayout>
